@@ -31,7 +31,7 @@ const todos = ref([
 const getAllTodos = async () => {
   try {
     const res = await axios.get(
-      "https://jsonplaceholder.typicode.com/todos?_limit=20"
+      "https://jsonplaceholder.typicode.com/todos?_limit=5"
     );
     console.log(res.data);
     todos.value = res.data;
